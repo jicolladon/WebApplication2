@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "View1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*@{
+    var email=icabezas@pasiona.com
+}*@
+<h2>Curriculum</h2>
+<section id="menu" >
+
+</section>
+<section id="genetal">
+    <div id="info_general" title="Información general">
+        <h3>Información general</h3>
+        <img class="imgcurriculum" src="~/img/facebook-profile-picture-n-copy-580x360.jpg"
+             alt="Imagen de perfil"
+             />
+        <table>
+
+        </table>
+    </div>
+    <div id="experiencia" title="Experiencia">
+        <h3 class="sectionTittle">Experiencia</h3>
+
+    </div>
+    <div id="estudios" title="Estudios">
+        <table class="table table-responsive" id="idiomasTabla" title="Idiomas">
+            <caption class="h3">Estudios</caption>
+            <tbody>
+                <tr>
+                    <th>Informatica</th>
+                    <td>
+                        <ul>
+                            <li>Grado de ingeneria informatica en la upc</li>
+                            <li>Especialización de Ingenieria del software</li>
+                            <li>TFG: Migración y mejora de una web en Joomla</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <table class="table table-responsive" id="idiomasTabla" title="Idiomas">
+        <caption class="h3">Idiomas</caption>
+        <thead>
+            <tr>
+                <th>Idiomas</th>
+                <th>Leido</th>
+                <th>Escrito</th>
+                <th>Hablado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Castellano</th>
+                    <td>Nativo</td>
+                    <td>Nativo</td>
+                    <td>Nativo</td>
+            </tr>
+            <tr>
+                <th>Catalan</th>
+                <td>Alto</td>
+                <td>Alto</td>
+                <td>Alto</td>
+            </tr>
+            <tr>
+                <th>Ingles</th>
+                <td>Medio</td>
+                <td>Medio</td>
+                <td>Bajo</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <form class="form" id="Contactar" title="Contactar">
+        <h3 class="sectionTittle">Contactar</h3>
+        Nombre Completo:<input type="text" name="fname"><br>
+        E-mail: <input type="email" name="email" autocomplete="off"><br>
+        Razon: <textarea  name="razon"></textarea><br>
+        <input type="submit">
+    </form>
+</section>

@@ -1,0 +1,46 @@
+﻿body {
+}
+.mio {
+    font-size-adjust : inherit;
+    font-style: italic;
+    content: inherit;
+    background-color: blue;
+}
+.Activos {
+       background-color: green;
+       font-family:'Adobe Arabic';
+       font-style:normal;
+       color: black;
+
+}
+.Inactivos {
+    background-color: red;
+    font-family:'Adobe Caslon Pro';
+    font-style: normal;
+    color: black;
+}
+.Titulo {
+    background-color: black;
+    Color: white;
+    font-size: xx-large;
+    font-size-adjust:inherit;
+    font-style:oblique;
+}
+.sectionTittle {
+    font-size: large;
+    font-size-adjust:inherit;
+    font-weight:bold;
+    color: black;
+}
+.imgcurriculum{
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+    padding-left:initial;
+    height:104px;
+    width:140px;
+    max-width:100%; 
+    max-height:100%;
+    margin:auto;
+    display:block;
+}

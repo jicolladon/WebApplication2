@@ -1,0 +1,17 @@
+﻿@model WebApplication1.Models.Alert
+
+<div class="row">
+    <div class="col-md-12">
+           <div id="@Model.id" class="alert @Model.CssClass" style="display:none">
+                <strong id="alertTitle">@Model.Title></strong>
+                <span id="alertMessage">@Model.Error</span>
+                <ul id="lstErrors" style="display:table-row">
+                    @foreach (var item in Model.Errors)
+                    {
+                        <li>@item</li>
+                    }
+               </ul>
+        </div>
+    </div>
+ </div>
+

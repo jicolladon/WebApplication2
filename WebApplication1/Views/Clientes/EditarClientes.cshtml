@@ -1,0 +1,79 @@
+﻿@model IEnumerable<WebApplication1.Models.Cliente>
+@using WebApplication1.Resources
+
+@{
+    ViewBag.Title = "EditarClientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+
+<h2>EditarClientes</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm("Search", "Clientes", FormMethod.Get))
+{
+    @Html.TextBox("SearchString")
+    <input type="submit" />
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            @{
+                var nombre = Html.DisplayNameFor(model => model.Nombre);
+            }
+            @Html.DisplayNameFor(model => model.Nombre)
+
+            @Html.ActionLink("Asc", "OrderByName", new { order = "Asc" })
+            @Html.ActionLink("Desc", "OrderByName", new { order = "Desc" })
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Activo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Edad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Activo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.ActionLink(Language.Edit, "ContactEdition", new { id=item.Id }) |
+            @Html.ActionLink(Language.Details, "Details", new { id = item.Id }) |
+            @*@Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+            @Html.ActionLink(Language.Delete, "Delete", new { id = item.Id }, FormMethod.Post)
+        </td>
+    </tr>
+}
+
+</table>
+@Html.ActionLink("Anterior", "giveMeBefore", Model)
+@Html.ActionLink("Següent", "giveMeNext", Model)
+

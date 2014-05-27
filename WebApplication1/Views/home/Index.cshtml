@@ -1,0 +1,20 @@
+﻿@using WebApplication1.Resources
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Language.Tittle</h2>
+<div class="text-center">@Language.Tittle</div>
+<div id="btnAlert" class="btn brn-primary">Alert!!</div>
+@Html.Partial("_Alert", new WebApplication1.Models.Alert
+{
+    id = "alertDetalle",
+    Error = "Error desde el modelo",
+    Title = "Error!!",
+    Errors = new List<string>{"Errors"}
+})
+@section scripts{
+    <script language="JavaScript" src="~/Scripts/App/btnAlert.js"></script>
+}
