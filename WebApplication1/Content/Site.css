@@ -33,14 +33,15 @@
     color: black;
 }
 .imgcurriculum{
-    position:inherit;
-    margin-right:auto;
-    margin-left:auto;
-    padding-left:initial;
+    position:relative;
+    left:0px;
+    margin-left:0px;
     height:104px;
     width:140px;
     max-width:100%; 
     max-height:100%;
-    margin:auto;
-    display:block;
+}
+.info_general {
+    top:inherit;
+    margin-top:auto;
 }

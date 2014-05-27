@@ -103,6 +103,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="img\facebook.png" />
+    <Content Include="img\linked_in.png" />
+    <Content Include="img\twitter.png" />
     <Content Include="Scripts\App\btnAlert.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

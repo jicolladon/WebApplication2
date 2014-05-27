@@ -7,34 +7,63 @@
     var email=icabezas@pasiona.com
 }*@
 <h2>Curriculum</h2>
-<section id="menu" >
-
+<section id="leftCurriculum" class="col-sm-2">
+    <nav class="navbar navbar-default navbar-btn" role="navigation">
+        <a href="#MiddleCurriculum" name="Inicio">Inicio</a><br>
+        <a href="#estudios" name="Experiencia">Experiencia</a><br>
+        <a href="#idiomas" name="Idiomas">Idiomas</a><br>
+        <a href="#contacto" name="Contacto">Contacto</a><br>
+    </nav>
 </section>
-<section id="genetal">
-    <div id="info_general" title="Información general">
+<section id="MiddleCurriculum" class="col-sm-9">
+    <div class="row" id="info_general" title="Información general">
         <h3>Información general</h3>
-        <img class="imgcurriculum" src="~/img/facebook-profile-picture-n-copy-580x360.jpg"
-             alt="Imagen de perfil"
-             />
-        <table>
-
-        </table>
+        <img class="imgcurriculum col-lg-10" src="~/img/facebook-profile-picture-n-copy-580x360.jpg"alt="Imagen de perfil">
+        <div id="dadesPersonals" class="col-md-7">
+            <dl>
+                <dt>Nombre:</dt>
+                    <dl>Joan Isaac</dl>
+                <dt>Apellidos:</dt>
+                    <dl>Collado Navarro</dl>
+                <dt>Fecha de nacimiento:</dt>
+                    <dl>21 de Enero de 1986</dl>
+                <dt>Correo electronico:</dt>
+                    <dl><a href ="mailto:joan.isaac.collado@gmail.com">joan.isaac.collado@gmail.com</a></dl>
+                </dl>
+         </div>
+        <div id="xarxes socials" class="col-md-7">
+            <a href="https://www.facebook.com/joan.isaac.collado" target="_blank">
+                <img src="http://static.viewbook.com/images/social_icons/facebook_32.png" />
+            </a>
+            <a href="https://twitter.com/Sharker86" target="_blank">
+                <img src="http://static.viewbook.com/images/social_icons/twitter_32.png" />
+            </a>
+            <a href="https://www.linkedin.com/pub/joan-isaac-collado-navarro/30/304/a89" target="_blank">
+                <img src="http://static.viewbook.com/images/social_icons/linkedin_32.png" />
+            </a>
+        </div>
     </div>
-    <div id="experiencia" title="Experiencia">
-        <h3 class="sectionTittle">Experiencia</h3>
-
-    </div>
-    <div id="estudios" title="Estudios">
-        <table class="table table-responsive" id="idiomasTabla" title="Idiomas">
-            <caption class="h3">Estudios</caption>
+    
+    <div class="row" id="estudios" title="Estudios">
+        <table class="table table-responsive">
+            <caption class="h3 ">Estudios</caption>
             <tbody>
                 <tr>
                     <th>Informatica</th>
                     <td>
                         <ul>
-                            <li>Grado de ingeneria informatica en la upc</li>
-                            <li>Especialización de Ingenieria del software</li>
-                            <li>TFG: Migración y mejora de una web en Joomla</li>
+                            <li>Grado de ingeneria informatica en la upc
+                                <ul>
+                                    <li>Especialización de Ingenieria del software</li>
+                                    <li>TFG: Migración y mejora de una web en Joomla</li>
+                                </ul>
+                            </li>
+                            <li>Master.net de pasiona
+                                <ul>
+                                    <li>C#</li>
+                                    <li>Asp.net</li>
+                                </ul>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -42,7 +71,27 @@
 
         </table>
     </div>
-    <table class="table table-responsive" id="idiomasTabla" title="Idiomas">
+    <div class="row" id="experiencia" title="experiencia">
+        <table class="table table-responsive">
+            <caption class="h3 ">Experiencia</caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><strong>2009-2010:</strong> I worked as teacher in Citilab-Cornella.net where 
+                                        I gave 4 lessons of 4 hours, for seniors who wanted to acquire basic computer knowledge.</li>
+                            <li><strong>2004-2011:</strong> I worked as stretcher-bearer at “Hospital Universitario de
+                                        Bellvitge”, where I was developing supporting roles to health staff and
+                                        patient service functions. These functions were developed in critical care,
+                                        emergency guard, psychiatry, and other minor hospitalization units.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div> 
+       <table class="table table-responsive" id="idiomas" title="Idiomas">
         <caption class="h3">Idiomas</caption>
         <thead>
             <tr>
@@ -74,7 +123,7 @@
         </tbody>
         
     </table>
-    <form class="form" id="Contactar" title="Contactar">
+    <form class="form" id="contacto" title="Contactar">
         <h3 class="sectionTittle">Contactar</h3>
         Nombre Completo:<input type="text" name="fname"><br>
         E-mail: <input type="email" name="email" autocomplete="off"><br>
