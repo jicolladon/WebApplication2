@@ -33,7 +33,7 @@
     color: black;
 }
 .imgcurriculum{
-    position:relative;
+    position:inherit;
     margin-right:auto;
     margin-left:auto;
     padding-left:initial;
