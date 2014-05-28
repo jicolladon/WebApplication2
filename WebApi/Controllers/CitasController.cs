@@ -33,7 +33,7 @@ namespace WebApi.Controllers
             try
             {
                 _context.Citas.Add(cita);
-                return Request.CreateResponse(HttpStatusCode.Ok, true);
+                return Request.CreateResponse(HttpStatusCode.OK, true);
             }
             catch (Exception ex)
             {
@@ -49,7 +49,7 @@ namespace WebApi.Controllers
             {
                 var cita = _context.Citas.FirstOrDefault(d => d.Id == id);
                 _context.Citas.Remove(cita);
-                return Request.CreateResponse(HttpStatusCode.Ok, true);
+                return Request.CreateResponse(HttpStatusCode.OK, true);
             }
             catch (Exception ex)
             {

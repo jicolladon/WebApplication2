@@ -150,7 +150,6 @@
     <Compile Include="Models\Cita.cs" />
     <Compile Include="Models\CitasContext.cs" />
     <Compile Include="Models\Medico.cs" />
-    <Compile Include="Models\MedicoContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

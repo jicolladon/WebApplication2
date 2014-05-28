@@ -14,12 +14,12 @@ namespace WebApi
     {
         protected void Application_Start()
         {
+            Database.SetInitializer<DbContext>(new CreateDatabaseIfNotExists<DbContext>());
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            Database.SetInitializer<DbContext>(new CreateDatabaseIfNotExists<DbContext>());
         }
     }
 }

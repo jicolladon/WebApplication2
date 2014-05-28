@@ -10,12 +10,10 @@ namespace WebApi.Controllers
 {
     public class MedicosController : ApiController
     {
-        private MedicoContext _context;
-
-
+        private CitasContext _context;
         public MedicosController()
         {
-            _context = new MedicoContext();
+            _context = new CitasContext();
         }
         // GET api/medicos
         public IEnumerable<Medico> Get()
@@ -37,7 +35,7 @@ namespace WebApi.Controllers
             try
             {
                 _context.Medicos.Add(med);
-                return Request.CreateResponse(HttpStatusCode.Ok, true);
+                return Request.CreateResponse(HttpStatusCode.OK, true);
             }
             catch (Exception ex)
             {

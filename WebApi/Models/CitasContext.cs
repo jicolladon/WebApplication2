@@ -9,5 +9,6 @@ namespace WebApi.Models
     public class CitasContext :DbContext
     {
         public DbSet<Cita> Citas { get; set; }
+        public DbSet<Medico> Medicos { get; set; }
     }
 }
