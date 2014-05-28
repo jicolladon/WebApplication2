@@ -4,36 +4,35 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApi.Models;
 
 namespace WebApi.Controllers
 {
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public IEnumerable<Beer> Get()
         {
-            return new string[] { "value1", "value2" };
+            var lista = new List<Beer>();
+            lista.Add(new Beer() { Id = 1, Name = "Hola" });
+            lista.Add(new Beer() { Id = 2, Name = "cerveza2" });
+            lista.Add(new Beer() { Id = 3, Name = "cerveza3" });
+            return lista;
         }
 
-        // GET api/values/5
-        public string Get(int id)
+        public Beer Get(int id)
         {
-            return "value";
+            var lista = new List<Beer>();
+            lista.Add(new Beer() { Id = 1, Name = "Hola" });
+            lista.Add(new Beer() { Id = 2, Name = "cerveza2" });
+            lista.Add(new Beer() { Id = 3, Name = "cerveza3" });
+            return lista[0];
         }
 
-        // POST api/values
-        public void Post([FromBody]string value)
+        public bool Post(Beer beer)
         {
-        }
 
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
+            return true;
         }
     }
 }
