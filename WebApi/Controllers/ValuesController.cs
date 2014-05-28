@@ -29,10 +29,10 @@ namespace WebApi.Controllers
             return lista[0];
         }
 
-        public bool Post(Beer beer)
+        public HttpResponseMessage Post(Beer beer)
         {
-
-            return true;
+            return Request.CreateResponse(HttpStatusCode.Created, true);
         }
+
     }
 }
