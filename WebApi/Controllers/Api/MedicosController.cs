@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using WebApi.Models;
 
-namespace WebApi.Controllers
+namespace WebApi.Controllers.Api
 {
     public class MedicosController : ApiController
     {
@@ -18,7 +18,7 @@ namespace WebApi.Controllers
         // GET api/medicos
         public IEnumerable<Medico> Get()
         {
-            _context.Medicos.Add(new Medico(){Id=1, Nombre="Pepe"});
+            
             var medicos = _context.Medicos.OrderBy(d => d.Nombre);
             return medicos;
         }
@@ -35,6 +35,7 @@ namespace WebApi.Controllers
             try
             {
                 _context.Medicos.Add(med);
+                _context.SaveChanges();
                 return Request.CreateResponse(HttpStatusCode.OK, true);
             }
             catch (Exception ex)
