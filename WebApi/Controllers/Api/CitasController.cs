@@ -17,11 +17,13 @@ namespace WebApi.Controllers.Api
         {
             _context = new CitasContext();
         }
+
+        //Todas las citas
         public IEnumerable<Cita> Get()
         {
             return _context.Citas.OrderBy(d => d.FechaCita);
         }
-
+        //Cita con identificador = id
         // GET api/citas/5
         public Cita Get(int id)
         {

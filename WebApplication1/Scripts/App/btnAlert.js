@@ -12,9 +12,9 @@ $(function () {
     });
 });
 
-function valida_envia() {
+function valida_envia() {   
     //Creamos un objeto 
-    object = document.fvalida.email;
+    object = document.fvalid    a.email;
     valueForm = object.value;
     var b = false;
     // Patron para el correo

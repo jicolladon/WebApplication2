@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2.Tests", "WebApplication2.Tests\WebApplication2.Tests.csproj", "{8ACA7067-23D6-48B3-B97E-6216F27817C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{3AFF13D9-CE97-4243-A442-75990EF5524B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiidioma-MVC", "WebApplication1\Multiidioma-MVC.csproj", "{3AFF13D9-CE97-4243-A442-75990EF5524B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{978276D1-F778-4059-85FC-6FE061EEBEBA}"
 EndProject
